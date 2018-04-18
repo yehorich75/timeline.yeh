@@ -5,8 +5,9 @@ body
 .grid
 	min-height: 100%
 	display: grid
-	grid-template-columns: repeat(2, 1fr)
+	grid-template-columns: repeat(12, 1fr)
 	grid-template-rows: repeat(6, 1fr)
+	grid-gap: 20px 0
 
 .grid-item
 	display: flex
@@ -14,30 +15,30 @@ body
 .one-section
 	background: #B0413E
 	grid-row: 1
-	grid-column: 1
+	grid-column: 2 / span 6
 
 .two-section
 	background: #FCAA67
 	grid-row: 2
-	grid-column: 2
+	grid-column: 6 / 12
 
 
 .three-section
 	background: #FFFFC7
 	grid-row: 3
-	grid-column: 1
+	grid-column: 2 / span 6
 
 .four-section
 	background: #7BB2D9
 	grid-row: 4
-	grid-column: 2
+	grid-column: 6 / 12
 
 .five-section
 	background: #49A078
 	grid-row: 5
-	grid-column: 1
+	grid-column: 2 / span 6
 
 .six-section
 	background: #DCE1DE
 	grid-row: 6
-	grid-column: 2
+	grid-column: 6 / 12

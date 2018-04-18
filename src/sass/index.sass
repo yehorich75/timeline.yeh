@@ -1,3 +1,5 @@
+$color-accent: #E20000
+
 body
 	font-size: 16px
 	height: 100%
@@ -8,37 +10,64 @@ body
 	grid-template-columns: repeat(12, 1fr)
 	grid-template-rows: repeat(6, 1fr)
 	grid-gap: 20px 0
+	margin: 4rem 0
+	&-item
+		display: flex
+		padding: 20px
+		&__img
+			min-width: 74px
+			height: 74px
+			overflow: hidden
+			border-radius: 100%
+			border: 5px solid grey
+		&__text
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			padding: 0 30px
+			p
+				line-height: 1.4
+				margin: 4px 0 0 0
+			span
+				font-size: 12px
+				color: $color-accent
+				font-weight: bold
+				margin-top: 5px
+	.odd
+		flex-direction: row-reverse
+		text-align: right
+		::before
+			content: ''
+			border-right: 1px solid grey
 
-.grid-item
-	display: flex
 
 .one-section
-	background: #B0413E
+	// background: #B0413E
 	grid-row: 1
-	grid-column: 2 / span 6
+	grid-column: 2 / 7
 
 .two-section
-	background: #FCAA67
+	// background: #FCAA67
 	grid-row: 2
-	grid-column: 6 / 12
+	grid-column: 7 / 12
 
 
 .three-section
-	background: #FFFFC7
+	// background: #FFFFC7
 	grid-row: 3
-	grid-column: 2 / span 6
+	grid-column: 2 / 7
 
 .four-section
-	background: #7BB2D9
+	// background: #7BB2D9
 	grid-row: 4
-	grid-column: 6 / 12
+	grid-column: 7 / 12
 
 .five-section
-	background: #49A078
+	// background: #49A078
 	grid-row: 5
-	grid-column: 2 / span 6
+	grid-column: 2 / 7
 
 .six-section
-	background: #DCE1DE
+	// background: #DCE1DE
 	grid-row: 6
-	grid-column: 6 / 12
+	grid-column: 7 / 12

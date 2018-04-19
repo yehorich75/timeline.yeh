@@ -36,9 +36,11 @@ body
 	.odd
 		flex-direction: row-reverse
 		text-align: right
+		padding-right: 0
 		.divider
 			width: 1px
 			background-color: #e1e1e1
+			margin-left: 30px
 			span
 				&::after
 					content: '■'
@@ -48,9 +50,11 @@ body
 					position: absolute
 					text-indent: -10px
 	.even
+		padding-left: 0
 		.divider
 			width: 1px
 			background-color: #e1e1e1
+			margin-right: 30px
 			span
 				&::before
 					content: '■'

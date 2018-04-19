@@ -19,7 +19,7 @@ body
 			height: 74px
 			overflow: hidden
 			border-radius: 100%
-			border: 5px solid grey
+			border: 5px solid #e1e1e1
 		&__text
 			display: flex
 			flex-direction: column
@@ -36,9 +36,30 @@ body
 	.odd
 		flex-direction: row-reverse
 		text-align: right
-		::before
-			content: ''
-			border-right: 1px solid grey
+		.divider
+			width: 1px
+			background-color: #e1e1e1
+			span
+				&::after
+					content: '■'
+					color: orange
+					font-size: 30px
+					line-height: 220%
+					position: absolute
+					text-indent: -10px
+	.even
+		.divider
+			width: 1px
+			background-color: #e1e1e1
+			span
+				&::before
+					content: '■'
+					color: orange
+					font-size: 30px
+					line-height: 220%
+					position: absolute
+					text-indent: -10px
+
 
 
 .one-section
@@ -71,3 +92,4 @@ body
 	// background: #DCE1DE
 	grid-row: 6
 	grid-column: 7 / 12
+
